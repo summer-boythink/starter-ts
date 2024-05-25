@@ -1,0 +1,22 @@
+{
+  "name": "@todo/demo1",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "server": "./dist/index.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "rimraf dist && tsc -w",
+    "build": "rimraf dist && tsc"
+  },
+  "keywords": [],
+  "author": "summer-boythink",
+  "license": "MIT"
+}

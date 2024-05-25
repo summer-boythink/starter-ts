@@ -1,13 +1,15 @@
 {
-  "name": "@todo/server",
+  "name": "@todo/demo2",
   "version": "0.0.1",
   "description": "",
-  "bin": {
-    "server": "./dist/main.js"
-  },
+  "type": "module",
   "scripts": {
+    "start": "node dist/index.js",
     "dev": "rimraf dist && tsc -w",
     "build": "rimraf dist && tsc"
+  },
+  "devDependencies": {
+    "@todo/demo1": "workspace:*"
   },
   "keywords": [],
   "author": "summer-boythink",
